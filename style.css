@@ -18,6 +18,8 @@ header{
     border-bottom: 1px solid #201c29;
     height: 130px;
     margin-bottom: 120px;
+    position: fixed;
+    z-index: 10000;
 }
 
 
@@ -82,6 +84,10 @@ a{
 }
 
 .container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    top: 250px;
     background-color: #100e17;
     color: white;
     height: 550px;
@@ -124,6 +130,7 @@ h1{
 }
 
 .color-radius{
+    top: 250px;
     z-index: 2;
     display: flex;
     align-items: flex-end;
@@ -190,7 +197,7 @@ button{
     color: white;
 }
 
-.half-circle{
+/* .half-circle{
     position: absolute;
     bottom: 204px;
     left: 244px;
@@ -201,13 +208,110 @@ button{
     stroke-width: 8;
     stroke-linecap: round;
     pointer-events: none;
+} */
+
+.grid-container{
+    margin-top: 250px;
+    background: white;
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr 1fr;
+    grid-template-rows: 0.4fr 2.6fr 0.1fr;
+    grid-template-areas: ". . ." ". . ." ". . .";
+}
+
+.grid-container img{
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 0 30px black;
 }
 
 article{
+    grid-column-start: 2;
+    grid-row-start: 2;
     background: white;
     color: black;
+    line-height: 1.6;
 }
 
-article a{
+article span{
+    font-weight: bold;    
+}
+
+article a, aside a{
     color: rgb(36, 132, 170);
+}
+
+article li{
+    margin: 0 0 5px;
+}
+
+aside{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    background: #fff;
+    color: #7a7a8c;
+    font-size: 14px;
+    margin-left: 10%;
+}
+
+.pubs{
+    display: flex;
+    flex-direction: column;
+}
+
+.pub{
+    width: 300px;
+    border-radius: 8px;
+    background:#f5f5f5;
+    margin: 5%;
+}
+
+.pub img{
+    position: relative;
+    margin: 8% 0 0 -8%;
+}
+
+.pub p{
+    padding: 15px;
+}
+
+.pub a:hover{
+    background: linear-gradient(to right,#ff8a00,#e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+.grey{
+    width: 50px!important;
+    height: 50px;
+    border-radius: 50%!important;
+    filter: grayscale(100%);
+    border: 20px solid #f5f5f5;
+    box-shadow: none!important;
+    float: left;
+    margin-top: 0!important;
+    margin-left:-21.6px;
+    left: -20px;
+}
+.comments{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.divi{
+    background: #201c29;
+    border-radius: 8px;
+    border: 1px solid #312d3c;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    padding: 20px;
+    height: 150px;
+}
+
+.divi img{
+    float: right;
 }
