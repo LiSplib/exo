@@ -16,17 +16,17 @@
             </div>
             <nav class="navbar">
                 <ul>
-                    <li><img src="article.png" /><a href="#">Articles</a></li>
-                    <li><img src="video.png" /><a href="#">Videos</a></li>
-                    <li><img src="book.png" /><a href="#">Almanac</a></li>
-                    <li><img src="code.png" /><a href="#">Snippets</a></li>
-                    <li><img src="email.png" /><a href="#">Newletter</a></li>
-                    <li><img src="job.png" /><a href="#">Jobs</a></li>
-                    <li><img src="map.png" /><a href="#">Guides</a></li>
+                    <li><img id="article" src="article.png" /><a href="#">Articles</a></li>
+                    <li><img id="video" src="video.png" /><a href="#">Videos</a></li>
+                    <li><img id="book" src="book.png" /><a href="#">Almanac</a></li>
+                    <li><img id="code" src="code.png" /><a href="#">Snippets</a></li>
+                    <li><img id="email" src="email.png" /><a href="#">Newletter</a></li>
+                    <li><img id="job" src="job.png" /><a href="#">Jobs</a></li>
+                    <li><img id="map" src="map.png" /><a href="#">Guides</a></li>
                 </ul>
             </nav>
             <div class="search">
-                <input type="text" placeholder="e.g flexbox"><button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="      e.g flexbox"><button type="submit"><i class="fa fa-search"></i></button>
             </div>
         </header>
         <div class="container">
@@ -34,6 +34,13 @@
             <h1>Exercise to Get Better at<br>Web Design</h1>
             <div class="author">
                 <img src="chris.jpeg" alt=""/>
+                <svg class="half-circle" width="80px" height="80px">
+                    <use xlink:href="#half-circle">
+                        <symbol id="half-circle" viewBox="0 0 106 57">
+                            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                        </symbol>
+                    </use>
+                </svg>
                 <p>Author<a href="#">Chris Coyier</a></p>
                 <p>66 Comments<a href="#">Go to Comments</a></p>
                 <p>Published<a>Apr 8,2009</a></p>
@@ -41,7 +48,24 @@
             </div>
         </div>
         <div class="color-radius">
-            <p>In-depth <a href="">front-end engineering courses</a></p>
+            <p>In-depth <a href="#">front-end engineering courses</a></p>
+        </div>
+        <div class="suite">
+            <article>
+                <p>Getting better at anything takes considerable time and effort. Feel like you are in a rut with progressing you web design skill? Try this:</p>
+                <ol>
+                    <li>Find a web site you really love the design of. Maybe browse <a href="http://unmatchedstyle.com/">a </a><a href="http://www.designbombs.com/">design </a><a href="http://bestwebgallery.com/">gallery</a>.</li>
+                    <li>Open up your design program of choice and <span>try to copy it identically*.</span> Take a full page screenshot of the site for reference and quick overlays.</li>
+                    <li>During this copying process, there will be many opportunities to put your own spin on the design and make it your own.</li>
+                    <li>Convert your final design into HTML/CSS. If you get stuck, <a href="https://css-tricks.com/forums/">ask for help</a>.</li>
+                    <li>Repeat.</li>
+                </ol>
+                <p>I have heard many fledgling web designers complain that they aren't able to get better because they don't have any clients to make sites for. You don't need a client to make a website. I've long been friends with many musicians. I think of them locking themselves in the piano room for 6 hours on a Saturday head-down in sheet music practicing. Why don't we do that?</p>
+                <p>*I'm not advocating design theft here, I'm advocating using great design to learn from. Like learning to play a popular song on guitar.</p>
+            </article>
+            <aside>
+                
+            </aside>
         </div>
     </body>
 </html>

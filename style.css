@@ -7,7 +7,6 @@ body{
     font-weight: 400;
     line-height: 1.35;
     font-family: 'Rubik', sans-serif;
-    --maxWidth: 1284px;
     background-color: #100e17;
 }
 
@@ -61,8 +60,9 @@ header{
 .navbar ul li img{
     display: flex;
     align-self: center;
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 45px;
+    margin-top: 10px;
 }
 
 .navbar ul li a{
@@ -74,11 +74,6 @@ header{
 
 .navbar li:hover{
     background-color: #201c29;
-}
-
-.navbar img{
-    width: 45px;
-    height: 45px;
 }
 
 a{
@@ -102,8 +97,10 @@ a{
 .breadcrumbs a{
     margin-top: 120px;
 }
+
 h1{
     margin-left: 13%;
+    font-weight: 700;
 }
 
 .breadcrumbs a{
@@ -144,8 +141,6 @@ input{
     background-color: #100e17;
     color: white;
     border-right: 0;
-    /* padding-right: 0;
-    margin-right: 0; */
 }
 
 .search{
@@ -190,9 +185,29 @@ button{
     height: 56px;
     border: 2px solid white;
     width: 51px;
-    /* margin-left: 0;
-    padding-left: 0; */
     border-radius: 0 27px 27px 0;
     border-left: 0;
     color: white;
+}
+
+.half-circle{
+    position: absolute;
+    bottom: 204px;
+    left: 244px;
+    width: 80px;
+    height: 56px;
+    fill: none;
+    stroke: #ff8a00;
+    stroke-width: 8;
+    stroke-linecap: round;
+    pointer-events: none;
+}
+
+article{
+    background: white;
+    color: black;
+}
+
+article a{
+    color: rgb(36, 132, 170);
 }
