@@ -31,24 +31,45 @@
         </header>
         <div class="container">
             <div class="breadcrumbs"><a href="#">Home /</a><a href="#">Articles /</a></div>
-            <h1>Exercise to Get Better at<br>Web Design</h1>
+            <h1 class="gras">Exercise to Get Better at<br>Web Design</h1>
             <div class="author">
-                <img src="chris.jpeg" alt=""/>
-                <svg class="half-circle" width="80px" height="80px">
-                    <use xlink:href="#half-circle">
-                        <symbol id="half-circle" viewBox="0 0 106 57">
-                            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
-                        </symbol>
-                    </use>
-                </svg>
-                <p>Author<a href="#">Chris Coyier</a></p>
-                <p>66 Comments<a href="#">Go to Comments</a></p>
-                <p>Published<a>Apr 8,2009</a></p>
-                <p>Updated<a>Apr 8, 2009</a></p>
+                <div class="svg-fixed">
+                    <img src="chris.jpeg" alt="chris coyier"/>
+                    <svg class="half-circle" width="80px" height="80px">
+                        <use xlink:href="#half-circle">
+                            <symbol id="half-circle" viewBox="0 0 106 57">
+                                <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+                            </symbol>
+                        </use>
+                    </svg>
+                    <svg class="visually-hidden" width="0" height="0">
+                        <defs>
+                            <linearGradient id="orange-to-pink" x1="1" x2="0" y1="1" y2="0">
+                                <stop offset="0%" stop-color="#DA1B60"></stop>
+                                <stop offset="100%" stop-color="#ff8a00"></stop>
+                            </linearGradient>
+                            <filter id="duotone_orange_pink">
+                                <feColorMatrix type="matrix" result="grayscale" values="1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0"></feColorMatrix>
+                                <feComponentTransfer color-interpolation-filters="sRBG" result="duotone">
+                                    <feFuncR type="table" tableValues="0.7411764706 0.9882352941"></feFuncR>
+                                    <feFuncG type="table" tableValues="0.0431372549 0.7333333333"></feFuncG>
+                                    <feFuncB type="table" tableValues="0.568627451 0.05098039216"></feFuncB> 
+                                    <feFuncA type="table" tablevalues="0 1"></feFuncA>
+                                </feComponentTransfer>
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="author-text">
+                    <p>Author<a href="#">Chris Coyier</a></p>
+                    <p>66 Comments<a href="#">Go to Comments<img src="arrow.png"/></a></p>
+                    <p>Published<a>Apr 8,2009</a></p>
+                    <p>Updated<a>Apr 8, 2009</a></p>
+                </div>
             </div>
         </div>
         <div class="color-radius">
-            <p>In-depth <a href="#">front-end engineering courses</a></p>
+            <p>In-depth <a href="#"><span class="gras">front-end engineering courses</span></a></p>
         </div>
         <div class="grid-container">
             <article>
@@ -85,10 +106,12 @@
             </aside>
         </div>
         <div class="comments">
-            <div class="divi">
-                <p>The Divi Theme</p>
-                <p>Download the Ultimate WordPress Theme including our advances Drag & Drop builder</p>
-                <img src="D.png" alt="divi">
+            <div class="divi-cont">
+                <div class="divi">
+                    <img src="D.png" alt="divi">
+                    <a href="#"><span class="gras">The Divi Theme</span></a>
+                    <p>Download the Ultimate WordPress Theme including our advances Drag & Drop builder</p>
+                </div>
             </div>
             <h3>Comments</h3>
             <div class="comment">
